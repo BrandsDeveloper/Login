@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(img/fundo.jpg) no-repeat ; /*Imagem de fundo para não repetir*/
+    background-size: cover; /*Fundo que ocupa o maximo possivel da tela*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Fonte de familia*/
+}
+
+.caixa{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+
+.espaço{
+    margin: 0 auto;
+}
+
+.forms{
+    margin: 0 auto;
+    background-color: #003d6bcc;
+    width: 400px; /*Largura*/
+    height: 34%; /*Altura*/
+    border-radius: 15px; /*Aredondamento da borda*/
+    text-align: center; /*Texto centralizado*/
+}
+
+.forms img{
+    margin-top: 20px;
+    width: 25%; /*Largura*/
+}
+
+.forms input{
+    color: white; /*Cor*/
+    font-size: 1em; /*Tamanho da fonte*/
+    border: 0px; /*Borda*/
+    outline: none; /*Tirar marcação da caixa de texto*/
+    background-color: transparent; /*Fundo transparente*/
+    margin: 10px; /*Espaçamento Externo*/
+    padding: 5px 5px 5px 30px; /*Espaçamento Interno*/
+    border-bottom: 2px solid darkgrey; /*Tamanho da borda de baixo, tipo e cor*/
+    border-radius: 2px; /*Aredondamento da borda*/
+    width: 250px; /*Largura*/
+}
+
+.forms input::placeholder{
+    color: white; /*Cor*/
+}
+
+.login{
+    margin: 15px;
+    background: url(img/icone-usuario.png) no-repeat;
+}
+
+.senha{
+    margin: 15px;
+    background: url(img/icone-cadeado.png) no-repeat;
+}
+
+span{
+    position:relative; /*Posição Relativa*/
+    right:50px; /*Direito*/
+    color: white; /*Cor*/
+}
+
+.forms input[type="checkbox"]{
+    width: 20px; /*Largura*/
+    margin: 7px; /*Espaçamento Externo*/
+}
+
+.forms input[type="text"]:focus,.forms input[type="password"]:focus{
+    width: 300px; /*Largura*/
+}
+
+.forms input[type="submit"]{
+    position: relative;
+    bottom: 15px;
+    padding: 5px; /*Espaçamento Interno*/
+    width: 28%; /*Largura*/
+    border: 2px solid darkgrey; /*Tamanho da borda, tipo e cor*/
+    border-radius: 25px; /*Aredondamento da borda*/
+}
+
+.forms input[type="submit"]:hover{
+    background-color: darkgrey ; /*Cor de fundo*/
+}
+
+.forms input[type="submit"]:active{
+    background-color: #ffb12a; /*Cor de fundo*/
+    border: 2px solid #ffb12a; /*Tamanho da borda, tipo e cor*/
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+    body{
+        background: url(img/fundo208.jpg);
+        background-size: cover;
+    }
+
+    .forms{
+        width: 280px; 
+    }
+
+    .login, .senha{
+        background-size: 9%;
+    }
+
+    .forms img{
+        width: 27%;
+    }
+    
+    .forms input, ::placeholder{
+        width: 190px;
+    }
+
+    span{
+        right: 25px; 
+        font-size: 0.8em;
+    }
+
+    .forms input[type="checkbox"]{
+        width: 20px; 
+        margin: 5px; 
+    }
+
+    .forms input[type="text"]:focus,.forms input[type="password"]:focus{
+        width: 215px;
+    }
+
+    .forms input[type="submit"]{
+        padding: 5px; 
+        width: 70%;
+    }
+
+}
+
+@media (min-width:541px) and (max-width:700px){
+    body{
+        background: url(img/fundoPP.jpg) center top;
+        background-size: cover;
+    }
+
+    .forms{
+        width: 320px; 
+    }
+    
+    .forms img{
+        width: 29%;
+    }
+
+    .login, .senha{
+        margin: 10px;
+        background-size: 9%;
+    }
+
+    .forms input, ::placeholder{
+        width: 200px;
+    }
+
+    span{
+        right:20px; 
+        font-size: 0.9em;
+    }
+
+    .forms input[type="checkbox"]{
+        width: 18px; 
+        margin: 5px; 
+    }
+
+    .forms input[type="text"]:focus,.forms input[type="password"]:focus{
+        width: 230px;
+    }
+
+    .forms input[type="submit"]{
+        padding: 6px;
+        width: 40%; 
+    }
+}
+
+@media (min-width:701px) and (max-width:810px){
+    body{
+        background: url(img/fundoP.jpg) center top;
+        background-size: cover;
+    }
+
+    .forms{
+        width: 350px;
+    }
+
+    .forms img{
+        width: 25%;
+    }
+
+    .forms input{
+        margin: 10px;   
+    }
+
+    .forms input, ::placeholder{
+        width: 230px;
+    }
+
+    span{
+        font-size: 1em;
+        right: 30px;
+    }
+
+    .forms input[type="checkbox"]{
+        width: 18px; 
+        margin: 5px; 
+    }
+
+    .forms input[type="text"]:focus,.forms input[type="password"]:focus{
+        width: 270px;
+    }
+
+    .forms input[type="submit"]{
+        padding: 7px;
+    }   
+}
+
+@media (min-width: 711px) and (max-width:925px){
+    body{
+        background: url(img/fundo710.jpg) center top;
+        background-size: cover;
+    }
+}
